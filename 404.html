@@ -2,9 +2,11 @@
 <meta charset="utf-8">
 <title>Redirecting to https://example.com/</title>
 <script>
-    var url = window.location.replace("https://msys2-snapshot.github.io/", "https://sourceforge.net/projects/msys2-snapshot/files/");
+    var url = window.location.href;
+    alert(url);    
+    url = url.replace("https://msys2-snapshot.github.io/", "https://sourceforge.net/projects/msys2-snapshot/files/");
+    window.location.replace(url);
     alert(window.location);
-    alert(url);
 </script>
 <meta http-equiv="refresh" content="0; URL=https://sourceforge.net/projects/msys2-snapshot/files/msys2/distrib/i686/msys2-base-i686-20161025.tar.xz/download">
 <link rel="canonical" href="https://sourceforge.net/projects/msys2-snapshot/files/msys2/distrib/i686/msys2-base-i686-20161025.tar.xz/download">
