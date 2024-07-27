@@ -1,6 +1,7 @@
 <script>
     var request_url = window.location.href;   
-    var dest_url = request_url.replace("https://msys2-snapshot.github.io/", "https://sourceforge.net/projects/msys2-snapshot/files/");
+   // var dest_url = request_url.replace("https://msys2-snapshot.github.io/", "https://sourceforge.net/projects/msys2-snapshot/files/");
+    var dest_url = request_url.replace("https://msys2-snapshot.github.io/", "https://downloads.sourceforge.net/project/msys2-snapshot/");
     window.location.replace(dest_url);
     document.title = "redirecting to " + dest_url;
     document.writeln(dest_url);
